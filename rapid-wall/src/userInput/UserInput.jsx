@@ -1,11 +1,11 @@
 import React from 'react'
 import { Input } from "../src/@/components/ui/input"
-import { Button } from "../src/@/components/ui/button"
+
 
 
 const UserInput = () => {
   return (
-    <div className='h-screen bg-green-600 p-10'>
+    <div className='h-screen bg-green-200 p-10'>
       <div className='text-4xl text-center pb-10'>
         Renacon Rapid Wall
       </div>
@@ -47,7 +47,7 @@ const UserInput = () => {
 
         </form>
       </div>
-      <div className='text-center'><Button className="w-40 mt-12">Get Bill</Button></div>
+      {/* <div className='text-center'><Button className="w-40 mt-12">Get Bill</Button></div> */}
     </div>
   )
 }
