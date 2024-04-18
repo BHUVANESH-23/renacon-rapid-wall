@@ -23,7 +23,7 @@ const styles = StyleSheet.create({
   box: {
     border: "1px solid black",
     width: "96%",
-    height: "96%",
+    height: "auto",
     margin: "2% 2% 2% 2%",
 
   },
@@ -382,7 +382,7 @@ const styles = StyleSheet.create({
     textAlign: "center",
     paddingTop: "4px",
     // padding:"20px",
-    
+
     borderRight: "1px solid black",
     borderBottom: "1px solid black",
     width: "200px",
@@ -393,11 +393,73 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "center",
     paddingTop: "4px",
-    
-    
+
+
     borderBottom: "1px solid black",
     width: "65px",
     height: "20px",
+  },
+  amtInWordsTitle: {
+    fontSize: "10px",
+    width: "25%",
+    paddingLeft: "5px",
+    paddingTop: "10px",
+    fontWeight: "bold",
+    fontFamily: "Roboto",
+    paddingBottom: "10px",
+  },
+  amtInWordsValue: {
+    fontSize: "10px",
+    paddingTop: "10px",
+    paddingBottom: "10px",
+  },
+
+     	
+  details:{
+    width:"70%",
+    height:'200px',
+    borderRight:"1px solid black",
+    borderTop:"2px solid black",
+    
+    paddingLeft:"5px",
+  },
+  signature:{
+    width:"40%",
+    height:"200px",
+    borderTop:"2px solid black",
+    
+  },
+  bankName:{
+    fontSize:"10px",
+    paddingTop:"15px",
+  },
+  branchName:{
+    fontSize:"10px",
+    paddingTop:"7px",
+   paddingBottom:"10px",
+  },
+  termsAndConditionsHeader:{
+    fontSize:"10px",
+    paddingTop:"8px",
+  },
+  termsAndConditionsText:{
+    fontSize:"10px",
+    paddingTop:"2px",
+    paddingRight:"5px",
+  },
+  declarationHeader:{
+    fontSize:"10px",
+	paddingTop:"15px",	
+  },
+  rapidSolutionsText:{
+    fontSize:"10px",
+    textAlign:"center",
+    paddingTop:"70px"
+  },
+  authorizedSignatory:{
+    fontSize:"10px",
+    paddingTop:"50px",
+    textAlign:"center",
   },
 });
 
@@ -504,7 +566,7 @@ const InvoicePdf = () => {
             <Text style={styles.productQty}>1661.12</Text>
             <Text style={styles.productQty}>IGST@18</Text>
             <Text style={styles.productAmt}>3322.04</Text>
-          </View>
+          </View>  
           <View style={styles.productFlex}>
             <Text style={styles.productSno}>1</Text>
             <Text style={styles.productCodeValue}>RERW000003</Text>
@@ -605,6 +667,31 @@ const InvoicePdf = () => {
             <Text style={styles.finalTotalAttribute}>TOTAL</Text>
             <Text style={styles.finalTotalValue}>8,420.00</Text>
           </View>
+
+
+          <View style={styles.productFlex}>
+            <Text style={styles.amtInWordsTitle}>Amount in Words :</Text>
+            <Text style={styles.amtInWordsValue}>Rupees Eight Thousand Four Hundred and Twenty Only.</Text>
+          </View>
+
+
+          <View style={styles.productFlex}>
+            <View style={styles.details}>
+              <Text style={styles.bankName}>Bank          :  HDFC BANK LTD, Current Account No. : 50200085788331</Text>
+              <Text style={styles.branchName}>Branch       : Perundurai Branch, Erode. IFS Code : HDFC 0009299</Text>
+              <Text style={styles.termsAndConditionsHeader}>Terms & Conditions :</Text>
+              <Text style={styles.termsAndConditionsText}>Subject to Perundurai Jurisdiction only. Interest will be charged @24% p.a. if the payment of this bill is not paid within due date.</Text>
+              <Text style={styles.termsAndConditionsHeader}>Damage : </Text>
+              <Text style={styles.termsAndConditionsText}>Occurrences of damages up to 5% is to be expected and tolerated. Chipping of edges not to be considered as damage since the panels are light in weight.</Text>
+              <Text style={styles.declarationHeader}>Declaration :</Text>
+              <Text style={styles.termsAndConditionsText}>We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.</Text>
+            </View>
+            <View style={styles.signature}>
+              <Text style={styles.rapidSolutionsText}>For Rapid Solutions</Text>
+              <Text style={styles.authorizedSignatory}>Authorised Signatory</Text>
+            </View>
+          </View>
+
 
         </View>
       </Page>
