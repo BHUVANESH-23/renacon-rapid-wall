@@ -15,6 +15,29 @@ Font.register({
 
 
 const styles = StyleSheet.create({
+  boldText: {
+    fontFamily: "Roboto",
+    fontWeight: 900,
+  },
+  rightBorder: {
+    borderRight: "1px solid black",
+  },
+  topBorder: {
+    borderTop: "1px solid black",
+  },
+  leftBorder: {
+    borderLeft: "1px solid black",
+  },
+  bottomBorder: {
+    borderBottom: "1px solid black",
+  },
+  textSize: {
+    fontSize:"10px",
+  },
+  flexBox: {
+    display: 'flex',
+    flexDirection: "row",
+  },
   page: {
     width: "100%",
     height: "100%",
@@ -34,19 +57,12 @@ const styles = StyleSheet.create({
     paddingTop: "5px",
     fontSize: "15px",
     color: "green",
-    fontFamily: 'Roboto',
-    fontWeight: "bold", // Bold weight
-    textAlign: "center", // Align the text horizontally at the center
-  },
-  text: {
-    fontSize: "10px",
-    fontWeight: 800,
-    fontFamily: 'Roboto',
 
-    // textAlign: "center"
+    textAlign: "center",
   },
+
   header: {
-    borderBottom: "1px solid black",
+
     paddingBottom: "10px",
     display: "flex",
     flexDirection: "row",
@@ -56,12 +72,11 @@ const styles = StyleSheet.create({
     // width: "100%", 
   },
   proforma: {
-    borderBottom: "1px solid black",
+
     paddingBottom: "5px",
     paddingTop: "5px",
     fontSize: "15px",
-    fontFamily: 'Roboto',
-    fontWeight: 700, // Bold weight
+
     textAlign: "center",
   },
   image1: {
@@ -75,22 +90,17 @@ const styles = StyleSheet.create({
     width: "120px",
     height: "40px"
   },
-  billDetails: {
-    display: "flex",
-    // borderRight: "1px solid black",
-    flexDirection: "row",
-    borderBottom: "1px solid black"
-  },
+
   billTo: {
     fontSize: "15px",
-    fontWeight: "normal",
+
     padding: "2px",
     width: "43%",
     height: "100px",
-    borderRight: "1px solid black",
+
   },
   billText: {
-    fontSize: "10px",
+
     paddingTop: "10px",
     paddingLeft: "5px",
     fontWeight: "light",
@@ -113,7 +123,7 @@ const styles = StyleSheet.create({
   },
   containerLeft: {
     justifyContent: "space-around",
-    borderBottom: "1px solid black",
+
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
@@ -122,12 +132,12 @@ const styles = StyleSheet.create({
     height: "33px",
   },
   invoiceNo: {
-    borderRight: '1px solid black',
+
     fontSize: "12px",
     width: "150px",
     paddingTop: "10px",
     // paddingRight:"10px",
-    marginLeft: "-45px",
+    marginLeft: "-46px",
 
     // align-items:"center",
     height: "100%",
@@ -144,7 +154,7 @@ const styles = StyleSheet.create({
 
   },
   invoiceNoFirst: {
-    borderRight: '1px solid black',
+
     fontSize: "12px",
     width: "150px",
     paddingTop: "10px",
@@ -153,68 +163,62 @@ const styles = StyleSheet.create({
     height: '100%'
   },
   sno: {
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+
     width: "40px",
     height: "25px",
     textAlign: "center",
-    fontSize: "10px",
+
     paddingTop: "4px",
   },
   productCode: {
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+
     width: "80px",
     height: "25px",
     textAlign: "center",
-    fontSize: "10px",
+
     paddingTop: "4px",
   },
   productDesc: {
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+    
     width: "125px",
     height: "25px",
     textAlign: "center",
-    fontSize: "10px",
+    
     paddingTop: "4px",
   },
   hsnCode: {
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+   
     width: "60px",
     height: "25px",
     textAlign: "center",
-    fontSize: "10px",
+    
     paddingTop: "4px",
   },
   qty: {
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+    
     width: "50px",
     height: "25px",
     textAlign: "center",
-    fontSize: "10px",
+    
     paddingTop: "4px",
   },
   uom: {
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+    
     width: "49px",
 
 
     height: "25px",
     textAlign: "center",
-    fontSize: "10px",
+    
     paddingTop: "4px",
   },
   amt: {
 
-    borderBottom: "1px solid black",
+    
     width: "65px",
     height: "25px",
     textAlign: "center",
-    fontSize: "10px",
+ 
     paddingTop: "4px",
   },
 
@@ -226,23 +230,23 @@ const styles = StyleSheet.create({
   },
 
   productSno: {
-    borderRight: "1px solid black",
+    
     width: "40px",
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
-    fontSize: "10px",
+    
   },
   productCodeValue: {
-    borderRight: "1px solid black",
+    
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
     width: "80px",
-    fontSize: "10px",
+    
   },
   productDescriptionValue: {
-    borderRight: "1px solid black",
+    
     height: "40px",
 
     paddingTop: "10px",
@@ -250,31 +254,31 @@ const styles = StyleSheet.create({
     paddingRight: "3px",
 
     width: "125px",
-    fontSize: "10px",
+   
   },
   productHSNcodeValue: {
-    borderRight: "1px solid black",
+    
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
     width: "60px",
-    fontSize: "10px",
+    
   },
   productQty: {
-    borderRight: "1px solid black",
+    
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
     width: "50px",
-    fontSize: "10px",
+    
   },
   productUom: {
-    borderRight: "1px solid black",
+    
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
     width: "49px",
-    fontSize: "10px",
+    
   },
   productAmt: {
 
@@ -282,184 +286,155 @@ const styles = StyleSheet.create({
     textAlign: "center",
     paddingTop: "15px",
     width: "60px",
-    fontSize: "10px",
+    
   },
 
   taxDetails: {
-    fontSize: "10px",
-    fontWeight: "bold",
+    
     textAlign: "center",
     paddingTop: "4px",
-    // padding:"20px",
-    borderTop: "1px solid black",
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+    
+    
     width: "306px",
     height: "20px",
 
   },
   totalWithoutTax: {
-    fontSize: "10px",
-    fontWeight: "bold",
+   
     textAlign: "center",
     paddingTop: "4px",
-    // padding:"20px",
-    borderTop: "1px solid black",
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+    
+   
     width: "200px",
     height: "20px",
   },
   totalValue: {
-    fontSize: "10px",
-    fontWeight: "bold",
+    
     textAlign: "center",
     paddingTop: "4px",
-    // padding:"20px",
-    borderTop: "1px solid black",
-
-    borderBottom: "1px solid black",
+   
     width: "65px",
     height: "20px",
   },
   productGST: {
-    fontSize: "10px",
-    fontWeight: "bold",
+   
     textAlign: "center",
     paddingTop: "4px",
 
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+   
     width: "153px",
     height: "20px",
   },
   CGSTamt: {
-    fontSize: "10px",
-    fontWeight: "bold",
+   
     textAlign: "center",
     paddingTop: "4px",
 
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+    
     width: "200px",
     height: "20px",
   },
   CGSTvalue: {
-    fontSize: "10px",
-    fontWeight: "bold",
+    
     textAlign: "center",
     paddingTop: "4px",
 
-    borderBottom: "1px solid black",
+   
     width: "65px",
     height: "20px",
   },
   individualGST: {
-    fontSize: "10px",
-    fontWeight: "bold",
+    
     textAlign: "center",
     paddingTop: "4px",
 
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+   
     width: "51px",
     height: "20px",
   },
   totalEmptyBox: {
-    fontSize: "10px",
-    fontWeight: "bold",
+    
     textAlign: "center",
     paddingTop: "4px",
 
-    borderRight: "1px solid black",
-    borderBottom: "1px solid black",
+    
     width: "306px",
     height: "20px",
   },
   finalTotalAttribute: {
-    fontSize: "10px",
-    fontWeight: "bold",
     textAlign: "center",
     paddingTop: "4px",
-    // padding:"20px",
-
     borderRight: "1px solid black",
     borderBottom: "1px solid black",
     width: "200px",
     height: "20px",
   },
   finalTotalValue: {
-    fontSize: "10px",
-    fontWeight: "bold",
     textAlign: "center",
     paddingTop: "4px",
-
-
-    borderBottom: "1px solid black",
     width: "65px",
     height: "20px",
   },
   amtInWordsTitle: {
-    fontSize: "10px",
+    
     width: "25%",
     paddingLeft: "5px",
     paddingTop: "10px",
-    fontWeight: "bold",
-    fontFamily: "Roboto",
+    
     paddingBottom: "10px",
   },
   amtInWordsValue: {
-    fontSize: "10px",
+    
     paddingTop: "10px",
     paddingBottom: "10px",
   },
 
-     	
-  details:{
-    width:"70%",
-    height:'200px',
-    borderRight:"1px solid black",
-    borderTop:"2px solid black",
+
+  details: {
+    width: "70%",
+    height: '200px',
     
-    paddingLeft:"5px",
+    borderTop: "2px solid black",
+
+    paddingLeft: "5px",
   },
-  signature:{
-    width:"40%",
-    height:"200px",
-    borderTop:"2px solid black",
+  signature: {
+    width: "40%",
+    height: "200px",
+    borderTop: "2px solid black",
+
+  },
+  bankName: {
     
+    paddingTop: "15px",
   },
-  bankName:{
-    fontSize:"10px",
-    paddingTop:"15px",
+  branchName: {
+    
+    paddingTop: "7px",
+    paddingBottom: "10px",
   },
-  branchName:{
-    fontSize:"10px",
-    paddingTop:"7px",
-   paddingBottom:"10px",
+  termsAndConditionsHeader: {
+    
+    paddingTop: "8px",
   },
-  termsAndConditionsHeader:{
-    fontSize:"10px",
-    paddingTop:"8px",
+  termsAndConditionsText: {
+    
+    paddingTop: "2px",
+    paddingRight: "5px",
   },
-  termsAndConditionsText:{
-    fontSize:"10px",
-    paddingTop:"2px",
-    paddingRight:"5px",
+  declarationHeader: {
+    
+    paddingTop: "15px",
   },
-  declarationHeader:{
-    fontSize:"10px",
-	paddingTop:"15px",	
+  rapidSolutionsText: {
+    fontSize:"12px",
+    textAlign: "center",
+    paddingTop: "70px"
   },
-  rapidSolutionsText:{
-    fontSize:"10px",
-    textAlign:"center",
-    paddingTop:"70px"
-  },
-  authorizedSignatory:{
-    fontSize:"10px",
-    paddingTop:"50px",
-    textAlign:"center",
+  authorizedSignatory: {
+    fontSize:"12px",
+    paddingTop: "50px",
+    textAlign: "center",
   },
 });
 
@@ -474,16 +449,16 @@ const InvoicePdf = () => {
     <Document>
       <Page style={styles.page}>
         <View style={styles.box}>
-          <View style={styles.header}>
+          <View style={[styles.header, styles.bottomBorder]}>
             <View>
               <Image src={img1} style={styles.image1}></Image>
             </View>
             <View>
               <View style={styles.content}>
-                <Text style={styles.title}>RAPID SOLUTIONS</Text>
-                <Text style={styles.text}>171/B, Erode Road, Perundurai - 638 052,</Text>
-                <Text style={styles.text}>Cell : +91 98432 95942, E-mail : rapidsolutions.2k@gmail.com</Text>
-                <Text style={styles.text}>GST No. : 33EZLPK6351N1ZT</Text>
+                <Text style={[styles.title, styles.boldText]}>RAPID SOLUTIONS</Text>
+                <Text style={[styles.boldText, styles.textSize]}>171/B, Erode Road, Perundurai - 638 052,</Text>
+                <Text style={[styles.boldText, styles.textSize]}>Cell : +91 98432 95942, E-mail : rapidsolutions.2k@gmail.com</Text>
+                <Text style={[styles.boldText, styles.textSize]}>GST No. : 33EZLPK6351N1ZT</Text>
               </View>
             </View>
             <View>
@@ -491,13 +466,13 @@ const InvoicePdf = () => {
             </View>
           </View>
           <View>
-            <Text style={styles.proforma}>Proforma Invoice</Text>
+            <Text style={[styles.proforma, styles.bottomBorder, styles.boldText]}>Proforma Invoice</Text>
           </View>
 
-          <View style={styles.billDetails}>
-            <View style={styles.billTo}>
+          <View style={[styles.bottomBorder, styles.flexBox]}>
+            <View style={[styles.billTo, styles.rightBorder, styles.boldText]}>
               <Text >Bill to:</Text>
-              <Text style={styles.billText}>
+              <Text style={[styles.billText, styles.textSize]}>
                 M/s GECO Legend Enviro Tech,{"\n "}
                 SF.No2/1B,Chettipalayam - Palladam Road,{"\n "}
                 Coimbatore-641201, TamilNadu{"\n "}
@@ -506,189 +481,179 @@ const InvoicePdf = () => {
               </Text>
             </View>
             <View style={styles.otherDetails}>
-              <View style={styles.containerLeft}>
+              <View style={[styles.containerLeft, styles.bottomBorder]}>
                 <View >
-                  <Text style={styles.invoiceNoFirst}>Invoice No : 027</Text>
+                  <Text style={[styles.invoiceNoFirst, styles.rightBorder, styles.boldText]}>Invoice No : 027</Text>
                 </View>
                 <View >
-                  <Text style={styles.dateFormatted}>Date : {formatted}</Text>
+                  <Text style={[styles.dateFormatted, styles.boldText]}>Date : {formatted}</Text>
                 </View>
               </View>
-              <View style={styles.containerLeft}>
+              <View style={[styles.containerLeft, styles.bottomBorder]}>
                 <View>
-                  <Text style={styles.invoiceNo}>Customer PO No: 12345</Text>
+                  <Text style={[styles.invoiceNo, styles.rightBorder, styles.boldText]}>Customer PO No: 12345</Text>
                 </View>
                 <View>
-                  <Text style={styles.date}>Fright: Verbal</Text>
+                  <Text style={[styles.date, styles.boldText]}>Fright: Verbal</Text>
                 </View>
 
               </View>
               <View style={styles.leftWithoutBorder}>
-                <View ><Text style={styles.invoiceNo}>Dispatch Through :</Text></View>
-                <View><Text style={styles.date}>Party</Text></View>
+                <View ><Text style={[styles.invoiceNo, styles.rightBorder, styles.boldText]}>Dispatch Through :</Text></View>
+                <View><Text style={[styles.date, styles.boldText]}>Party</Text></View>
 
               </View>
             </View>
           </View>
 
           <View style={styles.productFlex}>
-            <Text style={styles.sno}>S.No</Text>
-            <Text style={styles.productCode}>Product Code</Text>
-            <Text style={styles.productDesc}>Product Description</Text>
-            <Text style={styles.hsnCode}>HSN Code</Text>
-            <Text style={styles.qty}>QTY</Text>
-            <Text style={styles.uom}>UOM</Text>
-            <Text style={styles.qty}>Price</Text>
-            <Text style={styles.qty}>Tax Rate</Text>
-            <Text style={styles.amt}>Amount</Text>
+            <Text style={[styles.sno, styles.rightBorder, styles.bottomBorder, styles.textSize, styles.boldText]}>S.No</Text>
+            <Text style={[styles.productCode,styles.rightBorder, styles.bottomBorder, styles.textSize, styles.boldText]}>Product Code</Text>
+            <Text style={[styles.productDesc,styles.rightBorder, styles.bottomBorder, styles.textSize, styles.boldText]}>Product Description</Text>
+            <Text style={[styles.hsnCode,styles.rightBorder, styles.bottomBorder, styles.textSize, styles.boldText]}>HSN Code</Text>
+            <Text style={[styles.qty,styles.rightBorder, styles.bottomBorder, styles.textSize, styles.boldText]}>QTY</Text>
+            <Text style={[styles.uom,styles.rightBorder, styles.bottomBorder, styles.textSize, styles.boldText]}>UOM</Text>
+            <Text style={[styles.qty,styles.rightBorder, styles.bottomBorder, styles.textSize, styles.boldText]}>Price</Text>
+            <Text style={[styles.qty,styles.rightBorder, styles.bottomBorder, styles.textSize, styles.boldText]}>Tax Rate</Text>
+            <Text style={[styles.amt,styles.bottomBorder,styles.textSize,styles.boldText]}>Amount</Text>
           </View>
 
 
 
           <View style={styles.productFlex}>
-            <Text style={styles.productSno}>1</Text>
-            <Text style={styles.productCodeValue}>RERW000003</Text>
-            <Text style={styles.productDescriptionValue}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={styles.productHSNcodeValue}>6811.40.90</Text>
-            <Text style={styles.productQty}>2.00</Text>
-            <Text style={styles.productUom}>NOS</Text>
-            <Text style={styles.productQty}>1661.12</Text>
-            <Text style={styles.productQty}>IGST@18</Text>
-            <Text style={styles.productAmt}>3322.04</Text>
+            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
+            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
+            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
+            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
+            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
+            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
           </View>
           <View style={styles.productFlex}>
-            <Text style={styles.productSno}>1</Text>
-            <Text style={styles.productCodeValue}>RERW000003</Text>
-            <Text style={styles.productDescriptionValue}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={styles.productHSNcodeValue}>6811.40.90</Text>
-            <Text style={styles.productQty}>2.00</Text>
-            <Text style={styles.productUom}>NOS</Text>
-            <Text style={styles.productQty}>1661.12</Text>
-            <Text style={styles.productQty}>IGST@18</Text>
-            <Text style={styles.productAmt}>3322.04</Text>
-          </View>  
-          <View style={styles.productFlex}>
-            <Text style={styles.productSno}>1</Text>
-            <Text style={styles.productCodeValue}>RERW000003</Text>
-            <Text style={styles.productDescriptionValue}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={styles.productHSNcodeValue}>6811.40.90</Text>
-            <Text style={styles.productQty}>2.00</Text>
-            <Text style={styles.productUom}>NOS</Text>
-            <Text style={styles.productQty}>1661.12</Text>
-            <Text style={styles.productQty}>IGST@18</Text>
-            <Text style={styles.productAmt}>3322.04</Text>
-          </View>
-
-          <View style={styles.productFlex}>
-            <Text style={styles.productSno}>1</Text>
-            <Text style={styles.productCodeValue}>RERW000003</Text>
-            <Text style={styles.productDescriptionValue}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={styles.productHSNcodeValue}>6811.40.90</Text>
-            <Text style={styles.productQty}>2.00</Text>
-            <Text style={styles.productUom}>NOS</Text>
-            <Text style={styles.productQty}>1661.12</Text>
-            <Text style={styles.productQty}>IGST@18</Text>
-            <Text style={styles.productAmt}>3322.04</Text>
+            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
+            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
+            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
+            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
+            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
+            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
           </View>
           <View style={styles.productFlex}>
-            <Text style={styles.productSno}>1</Text>
-            <Text style={styles.productCodeValue}>RERW000003</Text>
-            <Text style={styles.productDescriptionValue}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={styles.productHSNcodeValue}>6811.40.90</Text>
-            <Text style={styles.productQty}>2.00</Text>
-            <Text style={styles.productUom}>NOS</Text>
-            <Text style={styles.productQty}>1661.12</Text>
-            <Text style={styles.productQty}>IGST@18</Text>
-            <Text style={styles.productAmt}>3322.04</Text>
-          </View>
-          <View style={styles.productFlex}>
-            <Text style={styles.productSno}>1</Text>
-            <Text style={styles.productCodeValue}>RERW000003</Text>
-            <Text style={styles.productDescriptionValue}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={styles.productHSNcodeValue}>6811.40.90</Text>
-            <Text style={styles.productQty}>2.00</Text>
-            <Text style={styles.productUom}>NOS</Text>
-            <Text style={styles.productQty}>1661.12</Text>
-            <Text style={styles.productQty}>IGST@18</Text>
-            <Text style={styles.productAmt}>3322.04</Text>
-          </View>
-          <View style={styles.productFlex}>
-            <Text style={styles.productSno}>1</Text>
-            <Text style={styles.productCodeValue}>RERW000003</Text>
-            <Text style={styles.productDescriptionValue}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={styles.productHSNcodeValue}>6811.40.90</Text>
-            <Text style={styles.productQty}>2.00</Text>
-            <Text style={styles.productUom}>NOS</Text>
-            <Text style={styles.productQty}>1661.12</Text>
-            <Text style={styles.productQty}>IGST@18</Text>
-            <Text style={styles.productAmt}>3322.04</Text>
+            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
+            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
+            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
+            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
+            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
+            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
           </View>
 
 
           <View style={styles.productFlex}>
-            <Text style={styles.taxDetails}>Tax Details</Text>
-            <Text style={styles.totalWithoutTax}>TOTAL</Text>
-            <Text style={styles.totalValue}>7135.61</Text>
+            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
+            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
+            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
+            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
+            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
+            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
           </View>
-
           <View style={styles.productFlex}>
-            <Text style={styles.productGST}>GST 12%</Text>
-            <Text style={styles.productGST}>GST 18%</Text>
-            <Text style={styles.CGSTamt}>CGST AMOUNT</Text>
-            <Text style={styles.CGSTvalue}>642</Text>
+            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
+            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
+            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
+            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
+            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
+            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
           </View>
-
           <View style={styles.productFlex}>
-            <Text style={styles.individualGST}>IGST</Text>
-            <Text style={styles.individualGST}>CGST</Text>
-            <Text style={styles.individualGST}>SGST</Text>
-            <Text style={styles.individualGST}>IGST</Text>
-            <Text style={styles.individualGST}>CGST</Text>
-            <Text style={styles.individualGST}>SGST</Text>
-            <Text style={styles.CGSTamt}>SGST AMOUNT</Text>
-            <Text style={styles.CGSTvalue}>642</Text>
-          </View>
-
-
-          <View style={styles.productFlex}>
-            <Text style={styles.individualGST}></Text>
-            <Text style={styles.individualGST}></Text>
-            <Text style={styles.individualGST}></Text>
-            <Text style={styles.individualGST}></Text>
-            <Text style={styles.individualGST}>642.0</Text>
-            <Text style={styles.individualGST}>642.0</Text>
-            <Text style={styles.CGSTamt}>ROUND OFF</Text>
-            <Text style={styles.CGSTvalue}>-0.02</Text>
-          </View>
-
-
-          <View style={styles.productFlex}>
-            <Text style={styles.totalEmptyBox}></Text>
-            <Text style={styles.finalTotalAttribute}>TOTAL</Text>
-            <Text style={styles.finalTotalValue}>8,420.00</Text>
+            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
+            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
+            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
+            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
+            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
+            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
           </View>
 
 
           <View style={styles.productFlex}>
-            <Text style={styles.amtInWordsTitle}>Amount in Words :</Text>
-            <Text style={styles.amtInWordsValue}>Rupees Eight Thousand Four Hundred and Twenty Only.</Text>
+            <Text style={[styles.taxDetails,styles.textSize,styles.rightBorder,styles.topBorder,styles.bottomBorder,styles.boldText]}>Tax Details</Text>
+            <Text style={[styles.totalWithoutTax,styles.textSize,styles.rightBorder,styles.topBorder,styles.bottomBorder,styles.boldText]}>TOTAL</Text>
+            <Text style={[styles.totalValue,styles.textSize,styles.topBorder,styles.bottomBorder,styles.boldText]}>7135.61</Text>
+          </View>
+
+          <View style={styles.productFlex}>
+            <Text style={[styles.productGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>GST 12%</Text>
+            <Text style={[styles.productGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>GST 18%</Text>
+            <Text style={[styles.CGSTamt,styles.textSize,styles.rightBorder,styles.bottomBorder]}>CGST AMOUNT</Text>
+            <Text style={[styles.CGSTvalue,styles.textSize,styles.bottomBorder]}>642</Text>
+          </View>
+
+          <View style={styles.productFlex}>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>IGST</Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>CGST</Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>SGST</Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>IGST</Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>CGST</Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>SGST</Text>
+            <Text style={[styles.CGSTamt,styles.textSize,styles.rightBorder,styles.bottomBorder]}>SGST AMOUNT</Text>
+            <Text style={[styles.CGSTvalue,styles.textSize,styles.bottomBorder]}>642</Text>
           </View>
 
 
           <View style={styles.productFlex}>
-            <View style={styles.details}>
-              <Text style={styles.bankName}>Bank          :  HDFC BANK LTD, Current Account No. : 50200085788331</Text>
-              <Text style={styles.branchName}>Branch       : Perundurai Branch, Erode. IFS Code : HDFC 0009299</Text>
-              <Text style={styles.termsAndConditionsHeader}>Terms & Conditions :</Text>
-              <Text style={styles.termsAndConditionsText}>Subject to Perundurai Jurisdiction only. Interest will be charged @24% p.a. if the payment of this bill is not paid within due date.</Text>
-              <Text style={styles.termsAndConditionsHeader}>Damage : </Text>
-              <Text style={styles.termsAndConditionsText}>Occurrences of damages up to 5% is to be expected and tolerated. Chipping of edges not to be considered as damage since the panels are light in weight.</Text>
-              <Text style={styles.declarationHeader}>Declaration :</Text>
-              <Text style={styles.termsAndConditionsText}>We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.</Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}></Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}></Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}></Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}></Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>642.0</Text>
+            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>642.0</Text>
+            <Text style={[styles.CGSTamt,styles.textSize,styles.rightBorder,styles.bottomBorder]}>ROUND OFF</Text>
+            <Text style={[styles.CGSTvalue,styles.textSize,styles.bottomBorder]}>-0.02</Text>
+          </View>
+
+
+          <View style={styles.productFlex}>
+            <Text style={[styles.totalEmptyBox,styles.textSize,styles.rightBorder,styles.bottomBorder]}></Text>
+            <Text style={[styles.finalTotalAttribute,styles.textSize,styles.boldText]}>TOTAL</Text>
+            <Text style={[styles.finalTotalValue,styles.textSize,styles.bottomBorder,styles.boldText]}>8,420.00</Text>
+          </View>
+
+
+          <View style={styles.productFlex}>
+            <Text style={[styles.amtInWordsTitle,styles.textSize,styles.boldText]}>Amount in Words :</Text>
+            <Text style={[styles.amtInWordsValue,styles.textSize]}>Rupees Eight Thousand Four Hundred and Twenty Only.</Text>
+          </View>
+
+
+          <View style={styles.productFlex}>
+            <View style={[styles.details,styles.rightBorder]}>
+              <Text style={[styles.bankName,styles.textSize,styles.boldText]}>Bank          :  HDFC BANK LTD, Current Account No. : 50200085788331</Text>
+              <Text style={[styles.branchName,styles.textSize,styles.boldText]}>Branch       : Perundurai Branch, Erode. IFS Code : HDFC 0009299</Text>
+              <Text style={[styles.termsAndConditionsHeader,styles.textSize,styles.boldText]}>Terms & Conditions :</Text>
+              <Text style={[styles.termsAndConditionsText,styles.textSize]}>Subject to Perundurai Jurisdiction only. Interest will be charged @24% p.a. if the payment of this bill is not paid within due date.</Text>
+              <Text style={[styles.termsAndConditionsHeader,styles.textSize,styles.boldText]}>Damage : </Text>
+              <Text style={[styles.termsAndConditionsText,styles.textSize]}>Occurrences of damages up to 5% is to be expected and tolerated. Chipping of edges not to be considered as damage since the panels are light in weight.</Text>
+              <Text style={[styles.declarationHeader,styles.textSize,styles.boldText]}>Declaration :</Text>
+              <Text style={[styles.termsAndConditionsText,styles.textSize]}>We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.</Text>
             </View>
             <View style={styles.signature}>
-              <Text style={styles.rapidSolutionsText}>For Rapid Solutions</Text>
-              <Text style={styles.authorizedSignatory}>Authorised Signatory</Text>
+              <Text style={[styles.rapidSolutionsText,styles.boldText]}>For Rapid Solutions</Text>
+              <Text style={[styles.authorizedSignatory,styles.boldText]}>Authorised Signatory</Text>
             </View>
           </View>
 
