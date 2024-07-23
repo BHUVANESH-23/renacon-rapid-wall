@@ -1,4 +1,4 @@
-// InvoicePdf.js
+
 
 import React from 'react';
 import { Page, Text, Document, StyleSheet, View, Font, Image } from '@react-pdf/renderer';
@@ -8,8 +8,8 @@ import img2 from "../assets/Picture2.jpg"
 Font.register({
   family: 'Roboto',
   fonts: [
-    { src: 'https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf' }, // Regular
-    { src: 'https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf' }, // Bold
+    { src: 'https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxP.ttf' }, 
+    { src: 'https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmEU9fBBc9.ttf' },
   ],
 });
 
@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     borderBottom: "1px solid black",
   },
   textSize: {
-    fontSize:"10px",
+    fontSize: "10px",
   },
   flexBox: {
     display: 'flex',
@@ -179,46 +179,46 @@ const styles = StyleSheet.create({
     paddingTop: "4px",
   },
   productDesc: {
-    
+
     width: "125px",
     height: "25px",
     textAlign: "center",
-    
+
     paddingTop: "4px",
   },
   hsnCode: {
-   
+
     width: "60px",
     height: "25px",
     textAlign: "center",
-    
+
     paddingTop: "4px",
   },
   qty: {
-    
+
     width: "50px",
     height: "25px",
     textAlign: "center",
-    
+
     paddingTop: "4px",
   },
   uom: {
-    
+
     width: "49px",
 
 
     height: "25px",
     textAlign: "center",
-    
+
     paddingTop: "4px",
   },
   amt: {
 
-    
+
     width: "65px",
     height: "25px",
     textAlign: "center",
- 
+
     paddingTop: "4px",
   },
 
@@ -230,23 +230,23 @@ const styles = StyleSheet.create({
   },
 
   productSno: {
-    
+
     width: "40px",
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
-    
+
   },
   productCodeValue: {
-    
+
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
     width: "80px",
-    
+
   },
   productDescriptionValue: {
-    
+
     height: "40px",
 
     paddingTop: "10px",
@@ -254,31 +254,31 @@ const styles = StyleSheet.create({
     paddingRight: "3px",
 
     width: "125px",
-   
+
   },
   productHSNcodeValue: {
-    
+
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
     width: "60px",
-    
+
   },
   productQty: {
-    
+
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
     width: "50px",
-    
+
   },
   productUom: {
-    
+
     height: "40px",
     textAlign: "center",
     paddingTop: "15px",
     width: "49px",
-    
+
   },
   productAmt: {
 
@@ -286,78 +286,78 @@ const styles = StyleSheet.create({
     textAlign: "center",
     paddingTop: "15px",
     width: "60px",
-    
+
   },
 
   taxDetails: {
-    
+
     textAlign: "center",
     paddingTop: "4px",
-    
-    
+
+
     width: "306px",
     height: "20px",
 
   },
   totalWithoutTax: {
-   
+
     textAlign: "center",
     paddingTop: "4px",
-    
-   
+
+
     width: "200px",
     height: "20px",
   },
   totalValue: {
-    
+
     textAlign: "center",
     paddingTop: "4px",
-   
+
     width: "65px",
     height: "20px",
   },
   productGST: {
-   
+
     textAlign: "center",
     paddingTop: "4px",
 
-   
+
     width: "153px",
     height: "20px",
   },
   CGSTamt: {
-   
+
     textAlign: "center",
     paddingTop: "4px",
 
-    
+
     width: "200px",
     height: "20px",
   },
   CGSTvalue: {
-    
+
     textAlign: "center",
     paddingTop: "4px",
 
-   
+
     width: "65px",
     height: "20px",
   },
   individualGST: {
-    
+
     textAlign: "center",
     paddingTop: "4px",
 
-   
+
     width: "51px",
     height: "20px",
   },
   totalEmptyBox: {
-    
+
     textAlign: "center",
     paddingTop: "4px",
 
-    
+
     width: "306px",
     height: "20px",
   },
@@ -376,15 +376,15 @@ const styles = StyleSheet.create({
     height: "20px",
   },
   amtInWordsTitle: {
-    
+
     width: "25%",
     paddingLeft: "5px",
     paddingTop: "10px",
-    
+
     paddingBottom: "10px",
   },
   amtInWordsValue: {
-    
+
     paddingTop: "10px",
     paddingBottom: "10px",
   },
@@ -393,7 +393,7 @@ const styles = StyleSheet.create({
   details: {
     width: "70%",
     height: '200px',
-    
+
     borderTop: "2px solid black",
 
     paddingLeft: "5px",
@@ -405,47 +405,51 @@ const styles = StyleSheet.create({
 
   },
   bankName: {
-    
+
     paddingTop: "15px",
   },
   branchName: {
-    
+
     paddingTop: "7px",
     paddingBottom: "10px",
   },
   termsAndConditionsHeader: {
-    
+
     paddingTop: "8px",
   },
   termsAndConditionsText: {
-    
+
     paddingTop: "2px",
     paddingRight: "5px",
   },
   declarationHeader: {
-    
+
     paddingTop: "15px",
   },
   rapidSolutionsText: {
-    fontSize:"12px",
+    fontSize: "12px",
     textAlign: "center",
     paddingTop: "70px"
   },
   authorizedSignatory: {
-    fontSize:"12px",
+    fontSize: "12px",
     paddingTop: "50px",
     textAlign: "center",
   },
 });
 
-const InvoicePdf = () => {
+const InvoicePdf = ({formData}) => {
   const d = new Date();
   const date = d.getDate()
   const month = d.getMonth() + 1
   const year = d.getFullYear()
+ 
+  console.log(formData.quantity);
 
   const formatted = `${date}/${month}/${year}`;
   return (
+
+
     <Document>
       <Page style={styles.page}>
         <View style={styles.box}>
@@ -525,7 +529,7 @@ const InvoicePdf = () => {
             <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
             <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
             <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
+            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>{formData.quantity || 'No qty'}</Text>
             <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
             <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
             <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
@@ -556,44 +560,9 @@ const InvoicePdf = () => {
 
 
           <View style={styles.productFlex}>
-            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
-            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
-            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
-            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
-            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
-          </View>
-          <View style={styles.productFlex}>
-            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
-            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
-            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
-            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
-            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
-          </View>
-          <View style={styles.productFlex}>
-            <Text style={[styles.productSno,styles.rightBorder,styles.textSize]}>1</Text>
-            <Text style={[styles.productCodeValue,styles.rightBorder,styles.textSize]}>RERW000003</Text>
-            <Text style={[styles.productDescriptionValue,styles.rightBorder,styles.textSize]}>Renacon Panel (SE) 75mm X 600mm X 3000mm</Text>
-            <Text style={[styles.productHSNcodeValue,styles.rightBorder,styles.textSize]}>6811.40.90</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>2.00</Text>
-            <Text style={[styles.productUom,styles.rightBorder,styles.textSize]}>NOS</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>1661.12</Text>
-            <Text style={[styles.productQty,styles.rightBorder,styles.textSize]}>IGST@18</Text>
-            <Text style={[styles.productAmt,styles.textSize]}>3322.04</Text>
-          </View>
-
-
-          <View style={styles.productFlex}>
-            <Text style={[styles.taxDetails,styles.textSize,styles.rightBorder,styles.topBorder,styles.bottomBorder,styles.boldText]}>Tax Details</Text>
-            <Text style={[styles.totalWithoutTax,styles.textSize,styles.rightBorder,styles.topBorder,styles.bottomBorder,styles.boldText]}>TOTAL</Text>
-            <Text style={[styles.totalValue,styles.textSize,styles.topBorder,styles.bottomBorder,styles.boldText]}>7135.61</Text>
+            <Text style={[styles.taxDetails, styles.textSize, styles.rightBorder, styles.topBorder, styles.bottomBorder, styles.boldText]}>Tax Details</Text>
+            <Text style={[styles.totalWithoutTax, styles.textSize, styles.rightBorder, styles.topBorder, styles.bottomBorder, styles.boldText]}>TOTAL</Text>
+            <Text style={[styles.totalValue, styles.textSize, styles.topBorder, styles.bottomBorder, styles.boldText]}>7135.61</Text>
           </View>
 
           <View style={styles.productFlex}>
@@ -616,44 +585,44 @@ const InvoicePdf = () => {
 
 
           <View style={styles.productFlex}>
-            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}></Text>
-            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}></Text>
-            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}></Text>
-            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}></Text>
-            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>642.0</Text>
-            <Text style={[styles.individualGST,styles.textSize,styles.rightBorder,styles.bottomBorder,styles.boldText]}>642.0</Text>
-            <Text style={[styles.CGSTamt,styles.textSize,styles.rightBorder,styles.bottomBorder]}>ROUND OFF</Text>
-            <Text style={[styles.CGSTvalue,styles.textSize,styles.bottomBorder]}>-0.02</Text>
+            <Text style={[styles.individualGST, styles.textSize, styles.rightBorder, styles.bottomBorder, styles.boldText]}></Text>
+            <Text style={[styles.individualGST, styles.textSize, styles.rightBorder, styles.bottomBorder, styles.boldText]}></Text>
+            <Text style={[styles.individualGST, styles.textSize, styles.rightBorder, styles.bottomBorder, styles.boldText]}></Text>
+            <Text style={[styles.individualGST, styles.textSize, styles.rightBorder, styles.bottomBorder, styles.boldText]}></Text>
+            <Text style={[styles.individualGST, styles.textSize, styles.rightBorder, styles.bottomBorder, styles.boldText]}>642.0</Text>
+            <Text style={[styles.individualGST, styles.textSize, styles.rightBorder, styles.bottomBorder, styles.boldText]}>642.0</Text>
+            <Text style={[styles.CGSTamt, styles.textSize, styles.rightBorder, styles.bottomBorder]}>ROUND OFF</Text>
+            <Text style={[styles.CGSTvalue, styles.textSize, styles.bottomBorder]}>-0.02</Text>
           </View>
 
 
           <View style={styles.productFlex}>
-            <Text style={[styles.totalEmptyBox,styles.textSize,styles.rightBorder,styles.bottomBorder]}></Text>
-            <Text style={[styles.finalTotalAttribute,styles.textSize,styles.boldText]}>TOTAL</Text>
-            <Text style={[styles.finalTotalValue,styles.textSize,styles.bottomBorder,styles.boldText]}>8,420.00</Text>
+            <Text style={[styles.totalEmptyBox, styles.textSize, styles.rightBorder, styles.bottomBorder]}></Text>
+            <Text style={[styles.finalTotalAttribute, styles.textSize, styles.boldText]}>TOTAL</Text>
+            <Text style={[styles.finalTotalValue, styles.textSize, styles.bottomBorder, styles.boldText]}>8,420.00</Text>
           </View>
 
 
           <View style={styles.productFlex}>
-            <Text style={[styles.amtInWordsTitle,styles.textSize,styles.boldText]}>Amount in Words :</Text>
-            <Text style={[styles.amtInWordsValue,styles.textSize]}>Rupees Eight Thousand Four Hundred and Twenty Only.</Text>
+            <Text style={[styles.amtInWordsTitle, styles.textSize, styles.boldText]}>Amount in Words :</Text>
+            <Text style={[styles.amtInWordsValue, styles.textSize]}>Rupees Eight Thousand Four Hundred and Twenty Only.</Text>
           </View>
 
 
           <View style={styles.productFlex}>
-            <View style={[styles.details,styles.rightBorder]}>
-              <Text style={[styles.bankName,styles.textSize,styles.boldText]}>Bank          :  HDFC BANK LTD, Current Account No. : 50200085788331</Text>
-              <Text style={[styles.branchName,styles.textSize,styles.boldText]}>Branch       : Perundurai Branch, Erode. IFS Code : HDFC 0009299</Text>
-              <Text style={[styles.termsAndConditionsHeader,styles.textSize,styles.boldText]}>Terms & Conditions :</Text>
-              <Text style={[styles.termsAndConditionsText,styles.textSize]}>Subject to Perundurai Jurisdiction only. Interest will be charged @24% p.a. if the payment of this bill is not paid within due date.</Text>
-              <Text style={[styles.termsAndConditionsHeader,styles.textSize,styles.boldText]}>Damage : </Text>
-              <Text style={[styles.termsAndConditionsText,styles.textSize]}>Occurrences of damages up to 5% is to be expected and tolerated. Chipping of edges not to be considered as damage since the panels are light in weight.</Text>
-              <Text style={[styles.declarationHeader,styles.textSize,styles.boldText]}>Declaration :</Text>
-              <Text style={[styles.termsAndConditionsText,styles.textSize]}>We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.</Text>
+            <View style={[styles.details, styles.rightBorder]}>
+              <Text style={[styles.bankName, styles.textSize, styles.boldText]}>Bank          :  HDFC BANK LTD, Current Account No. : 50200085788331</Text>
+              <Text style={[styles.branchName, styles.textSize, styles.boldText]}>Branch       : Perundurai Branch, Erode. IFS Code : HDFC 0009299</Text>
+              <Text style={[styles.termsAndConditionsHeader, styles.textSize, styles.boldText]}>Terms & Conditions :</Text>
+              <Text style={[styles.termsAndConditionsText, styles.textSize]}>Subject to Perundurai Jurisdiction only. Interest will be charged @24% p.a. if the payment of this bill is not paid within due date.</Text>
+              <Text style={[styles.termsAndConditionsHeader, styles.textSize, styles.boldText]}>Damage : </Text>
+              <Text style={[styles.termsAndConditionsText, styles.textSize]}>Occurrences of damages up to 5% is to be expected and tolerated. Chipping of edges not to be considered as damage since the panels are light in weight.</Text>
+              <Text style={[styles.declarationHeader, styles.textSize, styles.boldText]}>Declaration :</Text>
+              <Text style={[styles.termsAndConditionsText, styles.textSize]}>We declare that this invoice shows the actual price of the goods described and that all particulars are true and correct.</Text>
             </View>
             <View style={styles.signature}>
-              <Text style={[styles.rapidSolutionsText,styles.boldText]}>For Rapid Solutions</Text>
-              <Text style={[styles.authorizedSignatory,styles.boldText]}>Authorised Signatory</Text>
+              <Text style={[styles.rapidSolutionsText, styles.boldText]}>For Rapid Solutions</Text>
+              <Text style={[styles.authorizedSignatory, styles.boldText]}>Authorised Signatory</Text>
             </View>
           </View>
 
@@ -661,6 +630,7 @@ const InvoicePdf = () => {
         </View>
       </Page>
     </Document>
+
   );
 };
 

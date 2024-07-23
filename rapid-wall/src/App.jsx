@@ -1,23 +1,23 @@
-import { useState } from 'react';
-import { PDFDownloadLink } from '@react-pdf/renderer';
-import InvoicePdf from '../src/BillPDF/InvoicePdf';
+import React, { useState } from 'react';
 import './App.css';
-import UserInput from './userInput/UserInput';
-import { Button } from '../src/src/@/components/ui/button';
+import ParentComponent from './Parent';
+import { Button } from './src/@/components/ui/button';
 import axios from 'axios';
-import ReactPDF from '@react-pdf/renderer';
 
 function App() {
   const [pdfBlob, setPdfBlob] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleDownloadClick = async () => {
+  const handleGeneratePdf = async (blob) => {
+    setIsLoading(true);
     try {
-      const pdfDoc = <InvoicePdf />;
-      const blob = await ReactPDF.pdf(pdfDoc).toBlob();
       setPdfBlob(blob);
-      apiCall(blob);
+      triggerDownload(blob);
+      await apiCall(blob);
     } catch (error) {
-      console.error("Error converting document to blob:", error);
+      console.error("Error handling PDF blob:", error);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -29,7 +29,7 @@ function App() {
 
     try {
       const formData = new FormData();
-      formData.append('pdfFile', blob, 'invoice.pdf'); // Provide a filename
+      formData.append('pdfFile', blob, 'invoice.pdf');
 
       const result = await axios.post("http://localhost:5000/upload-files", formData, {
         headers: { "Content-Type": "multipart/form-data" },
@@ -41,15 +41,21 @@ function App() {
     }
   };
 
+  const triggerDownload = (blob) => {
+    if (blob) {
+      const link = document.createElement('a');
+      link.href = URL.createObjectURL(blob);
+      link.download = 'invoice.pdf';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  };
+
   return (
-    <>
-      <UserInput />
-      <PDFDownloadLink document={<InvoicePdf />} fileName='invoice.pdf' className='flex justify-center mt-[-170px]'>
-        {({ loading }) => (
-          loading ? <Button>Loading Document</Button> : <Button onClick={handleDownloadClick}>Download</Button>
-        )}
-      </PDFDownloadLink>
-    </>
+    <div className="app-container flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-green-400 p-10">
+      <ParentComponent onGeneratePdf={handleGeneratePdf} />
+    </div>
   );
 }
 

@@ -1,55 +1,94 @@
-import React from 'react'
-import { Input } from "../src/@/components/ui/input"
+import React, { useState } from 'react';
+import { Input } from "../src/@/components/ui/input";
+import './UserInput.css';
 
+const UserInput = ({ onFormSubmit }) => {
+  const [productCode, setProductCode] = useState('');
+  const [hsnCode, setHsnCode] = useState('');
+  const [quantity, setQuantity] = useState('');
+  const [uom, setUom] = useState('');
+  const [billTo, setBillTo] = useState('');
+  const [shipTo, setShipTo] = useState('');
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = {
+      productCode,
+      hsnCode,
+      quantity,
+      uom,
+      billTo,
+      shipTo,
+    };
+    onFormSubmit(formData);
+  };
 
-const UserInput = () => {
   return (
-    <div className='h-screen bg-green-200 p-10'>
-      <div className='text-4xl text-center pb-10'>
-        Renacon Rapid Wall
+    <div className='w-full max-w-4xl bg-white shadow-lg rounded-lg p-8 animate-slide-up'>
+      <div className='text-4xl text-center pb-10 font-bold text-gray-800 animate-fade-in'>
+        Invoice Generator
       </div>
-      <div className='p-10'>
-        <form >
-          <div className='flex justify-between pb-10'>
-            <div>
-              <label className='text-2xl '>Product Name:</label> <br /><br />
-              <Input type='text ' className='rounded-full w-48'></Input>
-            </div>
-            <div>
-              <label className='text-2xl '>HSN code:</label> <br /><br />
-              <Input type='text ' className='rounded-full w-48'></Input>
-            </div>
-            <div>
-              <label className='text-2xl '>GST Amount:</label> <br /><br />
-              <Input type='text ' className='rounded-full w-48'></Input>
-            </div>
+      <form onSubmit={handleSubmit}>
+        <div className='grid grid-cols-2 gap-8 pb-8'>
+          <div className='animate-fade-in'>
+            <label className='text-xl block mb-2 text-gray-700'>Product Code:</label>
+            <Input
+              type='text'
+              value={productCode}
+              onChange={(e) => setProductCode(e.target.value)}
+              className='rounded-lg w-full px-4 py-2 border border-gray-300 transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none'
+            />
           </div>
-          <div className='flex justify-between pb-10'>
-            <div>
-              <label className='text-2xl '>UOI:</label> <br /><br />
-              <Input type='text ' className='rounded-full w-48'></Input>
-            </div>
-            <div>
-              <label className='text-2xl '>Bill to:</label> <br /><br />
-              <Input type='text ' className='rounded-full w-48'></Input>
-            </div>
-            <div>
-              <label className='text-2xl '>Ship to:</label> <br /><br />
-              <Input type='text ' className='rounded-full w-48'></Input>
-            </div>
+          <div className='animate-fade-in'>
+            <label className='text-xl block mb-2 text-gray-700'>HSN code:</label>
+            <Input
+              type='text'
+              value={hsnCode}
+              onChange={(e) => setHsnCode(e.target.value)}
+              className='rounded-lg w-full px-4 py-2 border border-gray-300 transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none'
+            />
           </div>
-          <div>
-            <label className='text-2xl '>Ship Through:</label> <br /><br />
-            <Input type='text ' className='rounded-full w-48'></Input>
+          <div className='animate-fade-in'>
+            <label className='text-xl block mb-2 text-gray-700'>Quantity:</label>
+            <Input
+              type='text'
+              value={quantity}
+              onChange={(e) => setQuantity(e.target.value)}
+              className='rounded-lg w-full px-4 py-2 border border-gray-300 transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none'
+            />
           </div>
-
-
-        </form>
-      </div>
-      {/* <div className='text-center'><Button className="w-40 mt-12">Get Bill</Button></div> */}
+          <div className='animate-fade-in'>
+            <label className='text-xl block mb-2 text-gray-700'>UOM:</label>
+            <Input
+              type='text'
+              value={uom}
+              onChange={(e) => setUom(e.target.value)}
+              className='rounded-lg w-full px-4 py-2 border border-gray-300 transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none'
+            />
+          </div>
+          <div className='animate-fade-in'>
+            <label className='text-xl block mb-2 text-gray-700'>Bill to:</label>
+            <Input
+              type='text'
+              value={billTo}
+              onChange={(e) => setBillTo(e.target.value)}
+              className='rounded-lg w-full px-4 py-2 border border-gray-300 transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none'
+            />
+          </div>
+          <div className='animate-fade-in'>
+            <label className='text-xl block mb-2 text-gray-700'>Ship to:</label>
+            <Input
+              type='text'
+              value={shipTo}
+              onChange={(e) => setShipTo(e.target.value)}
+              className='rounded-lg w-full px-4 py-2 border border-gray-300 transition duration-300 ease-in-out focus:ring-2 focus:ring-blue-500 focus:outline-none'
+            />
+          </div>
+        </div>
+        <button type='submit' className='bg-blue-500 text-white px-4 py-2 rounded-lg'>Submit</button>
+      </form>
     </div>
-  )
-}
+  );
+};
 
-export default UserInput
+export default UserInput;

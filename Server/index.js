@@ -5,7 +5,7 @@ const cors = require("cors");
 const multer = require('multer');
 const path = require('path');
 const fs = require('fs');
-const File = require('./Schema'); // Import the File model
+const File = require('./Schema'); 
 
 app.use(express.json());
 app.use(cors());
@@ -30,7 +30,7 @@ app.post("/upload-files", upload.single("pdfFile"), async (req, res) => {
         const newFile = new File({
             filename: req.file.originalname,
             contentType: req.file.mimetype,
-            data: req.file.buffer.toString('base64') // Convert file buffer to base64
+            data: req.file.buffer.toString('base64') 
         });
         await newFile.save();
         res.status(200).json({ message: "File uploaded successfully", file: newFile });
